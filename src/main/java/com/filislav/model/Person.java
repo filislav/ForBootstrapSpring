@@ -1,11 +1,23 @@
 package com.filislav.model;
 
+import org.springframework.stereotype.Component;
+
+@Component
 public class Person {
+    private String id;
     private String firstName;
     private String lastName;
     private int age;
 
     public Person() {
+    }
+
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
     }
 
     public String getFirstName() {
@@ -30,5 +42,15 @@ public class Person {
 
     public void setAge(int age) {
         this.age = age;
+    }
+
+    @Override
+    public String toString() {
+        return "Person{" +
+                "id='" + id + '\'' +
+                ", firstName='" + firstName + '\'' +
+                ", lastName='" + lastName + '\'' +
+                ", age=" + age +
+                '}';
     }
 }
