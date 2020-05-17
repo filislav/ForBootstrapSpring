@@ -1,0 +1,12 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"></meta>
+    <title>Person</title>
+</head>
+<body>
+    First name: <span th:text="${person.getFirstName()}"></span><br/>
+    Last name: <span th:text="${person.getLastName()}"></span><br/>
+    Age:<span th:text="${person.getAge()}"></span><br/>
+</body>
+</html>
